@@ -1,5 +1,15 @@
 # Files with a dot in front
 
+Setup using zsh as shell, tmux for shell mangement, vim for editing.
+
+## ZSH
+To customise looks working with oh-my-zsh for shell
+
+## TMUX
+Don't need [tmux plugin manager](https://github.com/tmux-plugins/tpm) anymore.
+Also powerline stuff always sucks, so sticking with this easy config works well, stole most from [here](https://github.com/zaiste/tmuxified)
+
+
 ## Vim
 
 Space is my leader key.
@@ -13,7 +23,7 @@ Plugin used listed below. Installed via [pathogen](https://github.com/tpope/vim-
 - ack.vim
 - ctrlp.vim
 - rust.vim
-- uwu.cim (dark theme)
+- [uwu.vim](https://github.com/Mangeshrex/uwu.vim) (dark theme)
 - vim-airline
 - vim-colors-solarized (light theme, alternative papercolor)
 - vim-commentary
