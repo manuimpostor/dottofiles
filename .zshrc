@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -12,8 +12,9 @@ export ZSH="$HOME/.oh-my-zsh"
 DEFAULT_USER=`whoami`
 
 export EDITOR='vim'
-
-ZSH_THEME="gnzh"
+# --- colors and theme ----
+ZSH_THEME="af-magic"
+alias tmux="TERM=screen-256color-bce tmux"
 # ----ALIASES------
 alias v='vim'
 alias conf='vim ~/.vimrc ~/.zshrc ~/.tmux.conf'
@@ -94,8 +95,8 @@ alias q='exit'
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
-
+#plugins=(git)
+plugins=(git history-substring-search rust)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration

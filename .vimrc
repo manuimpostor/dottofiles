@@ -24,7 +24,6 @@ set wrap
 set backspace=0
 set t_Co=256
 set autoread " make vim reload if files changed
-set omnifunc=syntaxcomplete#Complete
 
 " buffer shortcuts
 nnoremap <F5> :buffers<CR>:buffer<Space>
@@ -46,9 +45,6 @@ nnoremap <leader><leader> <c-^>
 " Make splitting Vim windows easier
 map <leader>s <C-W>s
 map <leader>v <C-W>v
-
-" Display extra whitespace
-set list listchars=tab:»·,trail:·,nbsp:·
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
@@ -80,3 +76,20 @@ let python_highlight_all = 1
 " ctrl p buffer navigation
 map <Leader>b :CtrlPBuffer<CR>
 map <Leader>p :CtrlP<CR>
+
+" Ale linting / autocomplete
+set omnifunc=ale#completion#OmniFunc " c-x c-o
+
+" auto import ext modules
+let g:ale_completion_autoimport = 1
+
+" As-you-type autocomplete
+set completeopt=menu,menuone,preview,noselect,noinsert
+let g:ale_completion_enabled = 1
+
+" Ctrl left mouse goes to definition of function
+nnoremap <C-LeftMouse> :ALEGoToDefinition<CR>
+
+" RUST ale stuff
+let g:ale_fixers = { 'rust': ['rustfmt', 'trim_whitespace', 'remove_trailing_lines'] }
+let g:ale_linters = {'rust': ['analyzer']}

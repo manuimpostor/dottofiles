@@ -27,3 +27,7 @@ Plugin used listed below. Installed via [pathogen](https://github.com/tpope/vim-
 - vim-airline
 - vim-colors-solarized (light theme, alternative papercolor)
 - vim-commentary
+- [https://github.com/dense-analysis/ale#installation-with-pathogen
+- [ale](https://github.com/dense-analysis/ale#installation-with-pathogen) for linters
+
+Making vim a [light IDE for VIM](https://petermalmgren.com/rc-batch-day-9/) :)
